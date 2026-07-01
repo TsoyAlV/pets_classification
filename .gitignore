@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+.complete
+data/annotations/
+data/images/
+notebooks/*.pth
