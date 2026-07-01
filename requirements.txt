@@ -1,0 +1,6 @@
+scikit-learn==1.7.1
+seaborn==0.13.2
+pillow==11.0.0
+torch==2.7.1+cu118
+matplotlib
+kagglehub

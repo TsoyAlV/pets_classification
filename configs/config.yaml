@@ -1,0 +1,7 @@
+NUM_CLASSES: 37
+MODEL_NAME: custom # vgg/alexnet/custom
+NUM_EPOCHS: 1
+LR: 0.001
+BATCH_SIZE: 64
+SAVE_MODEL_FILEDIR: 'data/best_model.pth'
+ANNOTATION_FILE_PATH: 'data/annotations/'
