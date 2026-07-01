@@ -1,5 +1,6 @@
 .ipynb_checkpoints
+__pycache__
 .complete
 data/annotations/
 data/images/
-notebooks/*.pth
+*.pth
