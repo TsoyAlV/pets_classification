@@ -15,17 +15,10 @@ class DigitDataset(data.Dataset):
         else:
             annotation_file_path = Path(annotation_file_path)
         self.path = path
-        # Если transform не передан, создаем стандартный
-        if transform is None:
-            self.transform = transforms.Compose([
-                transforms.ToTensor(),  # Преобразует PIL в тензор [0,1]
-            ])
-        else:
-            self.transform = transform
-        
         self.length = 0
         self.targets = torch.eye(37)
         # Стандартные трансформации, если не переданы
+        # Если transform не передан, создаем стандартный
         if transform is None:
             self.transform = transforms.Compose([
                 transforms.Resize((224, 224)),  # Приводим все изображения к 224x224
