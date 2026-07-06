@@ -93,7 +93,7 @@ class Net(nn.Module):
         x = self.fc2(x)
         return x
 
-def create_alexnet(num_classes=10, freeze_features=True):
+def create_alexnet(num_classes=37, freeze_features=True):
     """
     freeze_features=True  -> замораживаем свёрточные слои, учим только классификатор
     freeze_features=False -> fine-tuning всей модели
@@ -116,7 +116,7 @@ def create_alexnet(num_classes=10, freeze_features=True):
     )
     return model
 
-def create_vgg(num_classes=10, freeze_features=True):
+def create_vgg(num_classes=37, freeze_features=True):
     """
     freeze_features=True  -> замораживаем свёрточные слои, учим только классификатор
     freeze_features=False -> fine-tuning всей модели
